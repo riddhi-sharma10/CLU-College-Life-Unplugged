@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLU - College Life United</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">CLU</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+        <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to CLU!</h1>
+            <p>Your one-stop platform for all things fun and educational in college.</p>
+            
+            <div class="hero-icons">
+                <div class="hero-icon" onclick="window.location.href='passionpair.html'">
+                    <div class="hero-icon-image">🎯</div>
+                    <h3>PassionPair</h3>
+                </div>
+                <div class="hero-icon" onclick="window.location.href='socialcircus.html'">
+                    <div class="hero-icon-image">🎪</div>
+                    <h3>Social Circus</h3>
+                </div>
+                <div class="hero-icon" onclick="window.location.href='nerdherd.html'">
+                    <div class="hero-icon-image">🤓</div>
+                    <h3>Nerd Herd</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="section">
+        <h2>Upcoming Events</h2>
+        <p class="section-subtitle">Don't miss out on the most exciting campus activities!</p>
+        
+        <div class="event-card">
+            <h3>🎵 Campus Concert Night</h3>
+            <p>Join us for a night of music, food, and fun! Featuring local bands and free snacks. Get ready to dance the night away with your friends!</p>
+            <button class="btn">RSVP Now</button>
+        </div>
+
+        <div class="event-card" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+            <h3>🎨 Art Exhibition Week</h3>
+            <p>Showcase your creativity! Submit your artwork and compete for amazing prizes. Open to all students across all departments.</p>
+            <button class="btn" style="color: #f5576c;">Register Today</button>
+        </div>
+
+        <div class="event-card" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+            <h3>🏆 Tech Hackathon</h3>
+            <p>48-hour coding marathon! Build innovative solutions, win prizes, and network with industry professionals.</p>
+            <button class="btn" style="color: #00f2fe;">Join Now</button>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="section">
+        <h2>Explore Our Features</h2>
+        <p class="section-subtitle">Connect, learn, and grow with CLU's amazing features</p>
+        
+        <div class="card-grid">
+            <div class="card">
+                <div class="card-icon">💕</div>
+                <h3>PassionPair</h3>
+                <p>Connect with peers based on your academic and personal interests. Find study partners, project collaborators, and friends who share your passions!</p>
+                <button class="btn" onclick="window.location.href='passionpair.html'">Find Your Match</button>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">🎪</div>
+                <h3>Social Circus</h3>
+                <p>Join our social hub to share photos, updates, and connect with fellow students. It's like Instagram, but just for the CLU community!</p>
+                <button class="btn" onclick="window.location.href='socialcircus.html'">Explore Social Circus</button>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">🤓</div>
+                <h3>Find My Nerd Herd</h3>
+                <p>Connect with fellow students who share your study habits. You're in this together, so let's find your perfect study buddy!</p>
+                <button class="btn" onclick="window.location.href='nerdherd.html'">Find My Buddy</button>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">📚</div>
+                <h3>Resource Library</h3>
+                <p>Access a vast collection of study materials, notes, and resources shared by students from all departments.</p>
+                <button class="btn">Browse Resources</button>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">🎯</div>
+                <h3>Career Center</h3>
+                <p>Get guidance on internships, job opportunities, and career counseling from industry experts.</p>
+                <button class="btn">Explore Careers</button>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">🌟</div>
+                <h3>Clubs & Societies</h3>
+                <p>Join student-run clubs and societies. From robotics to drama, find your community and pursue your interests!</p>
+                <button class="btn">Discover Clubs</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Get In Touch</h2>
+        <p class="section-subtitle">Have questions? We'd love to hear from you!</p>
+        
+        <div class="contact-form">
+            <form onsubmit="handleSubmit(event)">
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn" style="width: 100%;">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 CLU - College Life United. All Rights Reserved.</p>
+        <p style="margin-top: 10px; opacity: 0.8;">Making college life better, one connection at a time ✨</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
