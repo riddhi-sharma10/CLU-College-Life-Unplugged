@@ -1,12 +1,11 @@
-# CLU - College Life United 🎓
+# CLU - College Life Unplugged 🎓
 
-![CLU Banner](https://img.shields.io/badge/CLU-College%20Life%20United-blueviolet?style=for-the-badge)
-![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
+![CLU Banner](https://img.shields.io/badge/CLU-College%20Life%20Unplugged-blueviolet?style=for-the-badge)
 ![First Website](https://img.shields.io/badge/My%20First-Website-ff69b4?style=for-the-badge)
 
 ## 🌟 About The Project
 
-**CLU (College Life United)** is a comprehensive web platform designed to enhance the college experience by connecting students through shared interests, study habits, and social interactions. This is my **first website project**, built with HTML, CSS, and JavaScript!
+**CLU (College Life Unplugged)** is a comprehensive web platform designed to enhance the college experience by connecting students through shared interests, study habits, and social interactions. This is my **first website project**, built with HTML, CSS, and JavaScript!
 
 The platform serves as a one-stop hub where students can:
 - Find compatible study partners
@@ -69,28 +68,6 @@ The platform serves as a one-stop hub where students can:
 - **No frameworks** - Built from scratch to learn fundamentals
 
 ---
-
-## 📁 Project Structure
-
-```
-CLU-Website/
-│
-├── index.html              # Main homepage
-├── login.html              # Login page
-├── passionpair.html        # Interest matching page
-├── socialcircus.html       # Social media hub
-├── nerdherd.html           # Study buddy finder
-│
-├── styles.css              # Main stylesheet
-│
-├── script.js               # General JavaScript functions
-├── matchmaking.js          # PassionPair logic
-├── socialcircus.js         # Social Circus functionality
-└── nerdherd.js             # Nerd Herd matching algorithm
-```
-
----
-
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -167,7 +144,7 @@ Smart study buddy finder with detailed compatibility breakdown.
 
 ## 🤝 Contributing
 
-As this is my first website, I'm open to suggestions and improvements! 
+As this was my first website, I'm open to suggestions and improvements! 
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
@@ -203,17 +180,14 @@ Building this project helped me understand:
 
 I'd love to hear your feedback, suggestions, or just connect with fellow developers!
 
-**Your Name**
+**Riddhi Sharma**
 
-📧 Email: [your.email@example.com](mailto:your.email@example.com)  
-💼 LinkedIn: [linkedin.com/in/yourprofile](https://linkedin.com/in/yourprofile)  
-🐙 GitHub: [@yourusername](https://github.com/yourusername)  
-🌐 Portfolio: [yourwebsite.com](https://yourwebsite.com)
+📧 Email: riddhisharmawave18@gmail.com
+💼 LinkedIn: https://www.linkedin.com/in/riddhi-sharma-95b7a7324/
+🐙 GitHub: https://github.com/riddhi-sharma10
+
 
 **Want to connect?** Feel free to reach out via email! Whether it's about this project, collaboration opportunities, or just to chat about web development - I'm always happy to connect with the community! 🤝
-
-Project Link: [https://github.com/yourusername/CLU-Website](https://github.com/yourusername/CLU-Website)
-
 ---
 
 ## 🙏 Acknowledgments
@@ -224,16 +198,9 @@ Project Link: [https://github.com/yourusername/CLU-Website](https://github.com/y
 - Emoji icons from Unicode Standard
 
 ---
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
----
-
 ## 🌈 Why CLU?
 
-CLU stands for **College Life United** - bringing students together through technology. The platform aims to solve common college challenges:
+CLU stands for **College Life Unplugged** - bringing students together through technology. The platform aims to solve common college challenges:
 - Finding study partners with compatible schedules
 - Connecting with people who share your interests
 - Building a supportive campus community
