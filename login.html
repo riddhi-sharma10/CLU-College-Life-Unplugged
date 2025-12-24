@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - CLU</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">CLU</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#events">Events</a></li>
+            <li><a href="passionpair.html">PassionPair</a></li>
+            <li><a href="socialcircus.html">Social Circus</a></li>
+            <li><a href="nerdherd.html">Find My Nerd Herd</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+    </nav>
+
+    <!-- Login Section -->
+    <section class="login-section">
+        <div class="login-form">
+            <h2>Welcome Back!</h2>
+            <form onsubmit="handleLogin(event)">
+                <div class="form-group">
+                    <input type="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" class="btn">Login</button>
+            </form>
+            <p>Don't have an account? <a href="#signup">Sign up here</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 CLU - College Life United. All Rights Reserved.</p>
+        <p style="margin-top: 10px; opacity: 0.8;">Making college life better, one connection at a time ✨</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function handleLogin(event) {
+            event.preventDefault();
+            alert("Login successful! Welcome back to CLU!");
+            // Redirect to home page after login
+            window.location.href = "index.html";
+        }
+    </script>
+</body>
+</html>

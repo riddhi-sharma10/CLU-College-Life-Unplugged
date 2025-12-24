@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Circus - CLU</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">CLU</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#events">Events</a></li>
+            <li><a href="passionpair.html">PassionPair</a></li>
+            <li><a href="socialcircus.html">Social Circus</a></li>
+            <li><a href="nerdherd.html">Find My Nerd Herd</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+        <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+    </nav>
+
+    <!-- Social Circus Section -->
+    <section class="section" style="margin-top: 80px; min-height: 100vh; background: #f8f9fa;">
+        <h2>🎪 Welcome to Social Circus</h2>
+        <p class="section-subtitle">Share your life moments, create blogs, and interact with other students!</p>
+
+        <!-- Upload Image Form -->
+        <div class="upload-section">
+            <h3>📸 Share a Photo</h3>
+            <form id="upload-form" onsubmit="return uploadImage()">
+                <input type="file" id="imageUpload" accept="image/*" required>
+                <textarea id="caption" placeholder="Add a caption to your photo..." required></textarea>
+                <button type="submit" class="btn">Upload Photo</button>
+            </form>
+        </div>
+
+        <!-- Blog Creation Form -->
+        <div class="blog-section">
+            <h3>✍️ Write a Blog</h3>
+            <form id="blog-form" onsubmit="return createBlog()">
+                <textarea id="blogContent" placeholder="Share your thoughts, experiences, or stories with the community..." required></textarea>
+                <button type="submit" class="btn">Post Blog</button>
+            </form>
+        </div>
+
+        <!-- User Posts Section -->
+        <h3 style="text-align: center; font-size: 2em; margin: 40px 0 20px; color: #333;">📱 Recent Posts</h3>
+        <div id="posts" class="posts-section">
+            <!-- Sample posts will be added here by JavaScript -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 CLU - College Life United. All Rights Reserved.</p>
+        <p style="margin-top: 10px; opacity: 0.8;">Making college life better, one connection at a time ✨</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="socialcircus.js"></script>
+</body>
+</html>

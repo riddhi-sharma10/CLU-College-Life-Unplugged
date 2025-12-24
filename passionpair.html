@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PassionPair - CLU</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">CLU</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#events">Events</a></li>
+            <li><a href="passionpair.html">PassionPair</a></li>
+            <li><a href="socialcircus.html">Social Circus</a></li>
+            <li><a href="nerdherd.html">Find My Nerd Herd</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+        <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+    </nav>
+
+    <!-- PassionPair Section -->
+    <section class="section" style="margin-top: 80px; min-height: 100vh;">
+        <h2>💕 Find Your Perfect Match with PassionPair</h2>
+        <p class="section-subtitle">Fill in your interests to find the most compatible match among your fellow students!</p>
+        
+        <!-- Interest Form -->
+        <form class="passionpair-form" onsubmit="return findMatch()">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="interests">Select Your Interests (hold Ctrl/Cmd to select multiple):</label>
+            <select id="interests" name="interests" multiple required>
+                <option value="science">🔬 Science</option>
+                <option value="technology">💻 Technology</option>
+                <option value="art">🎨 Art</option>
+                <option value="music">🎵 Music</option>
+                <option value="sports">⚽ Sports</option>
+                <option value="literature">📚 Literature</option>
+                <option value="travel">✈️ Travel</option>
+                <option value="gaming">🎮 Gaming</option>
+                <option value="photography">📷 Photography</option>
+                <option value="cooking">🍳 Cooking</option>
+            </select>
+
+            <button type="submit" class="btn">Find My Match</button>
+        </form>
+
+        <!-- Display Match Result -->
+        <div id="match-result" class="match-result" style="display: none;">
+            <!-- This will be populated by JavaScript -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 CLU - College Life United. All Rights Reserved.</p>
+        <p style="margin-top: 10px; opacity: 0.8;">Making college life better, one connection at a time ✨</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="matchmaking.js"></script>
+</body>
+</html>

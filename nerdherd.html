@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find My Nerd Herd - CLU</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">CLU</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#events">Events</a></li>
+            <li><a href="passionpair.html">PassionPair</a></li>
+            <li><a href="socialcircus.html">Social Circus</a></li>
+            <li><a href="nerdherd.html">Find My Nerd Herd</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+        <button class="nav-toggle" onclick="toggleMenu()">☰</button>
+    </nav>
+
+    <!-- Find My Nerd Herd Section -->
+    <section class="section" style="margin-top: 80px; min-height: 100vh;">
+        <h2>🤓 Find Your Perfect Study Buddy</h2>
+        <p class="section-subtitle">Fill in your preferences to find the most compatible study buddy among your fellow students!</p>
+        
+        <!-- Study Buddy Finder Form -->
+        <form class="nerdherd-form" onsubmit="return findStudyBuddy()">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="course">Select Your Course:</label>
+            <select id="course" name="course" required>
+                <option value="">-- Choose your course --</option>
+                <option value="btech">🔧 B.Tech (Engineering)</option>
+                <option value="bba-llb">⚖️ BBA LLB (Law & Business)</option>
+                <option value="ba-la">📖 BA LA (Liberal Arts)</option>
+                <option value="bcom">💼 B.Com (Commerce)</option>
+                <option value="mba">🎓 MBA (Management)</option>
+                <option value="bsc">🔬 B.Sc (Science)</option>
+                <option value="ma">📚 MA (Arts)</option>
+            </select>
+
+            <label for="study-method">Preferred Study Method:</label>
+            <select id="study-method" name="study-method" required>
+                <option value="">-- Choose your style --</option>
+                <option value="solo">🧘 Solo Study (Quiet & Focused)</option>
+                <option value="group">👥 Group Study (Collaborative)</option>
+                <option value="discussion">💭 Discussion Based (Interactive)</option>
+                <option value="mixed">🔄 Mixed (Flexible)</option>
+            </select>
+
+            <label for="study-time">Preferred Study Time:</label>
+            <select id="study-time" name="study-time" required>
+                <option value="">-- Choose your time --</option>
+                <option value="morning">🌅 Morning (6 AM - 12 PM)</option>
+                <option value="afternoon">☀️ Afternoon (12 PM - 5 PM)</option>
+                <option value="evening">🌆 Evening (5 PM - 9 PM)</option>
+                <option value="night">🌙 Night (9 PM - 2 AM)</option>
+                <option value="latenight">🦉 Late Night (2 AM - 6 AM)</option>
+            </select>
+
+            <button type="submit" class="btn">Find My Study Buddy</button>
+        </form>
+
+        <!-- Display Match Result -->
+        <div id="buddy-result" class="buddy-result" style="display: none;">
+            <!-- This will be populated by JavaScript -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 CLU - College Life United. All Rights Reserved.</p>
+        <p style="margin-top: 10px; opacity: 0.8;">Making college life better, one connection at a time ✨</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="nerdherd.js"></script>
+</body>
+</html>
